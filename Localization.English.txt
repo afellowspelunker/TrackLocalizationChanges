@@ -1,94 +1,92 @@
 .,English
-quest.name,GD1 - Guardians of Deephall (v1.1)
-quest.description,"A digital adaptation of the Descent Second Edition quest - Guardians of Deephall (Act I).\n\nv1.1 - Added start round messaging, new custom monster activations, perils, minor flow changes, typo corrections.\n\nPlease report bugs at https://github/afellowspelunker/GuardiansofDeephall/issues."
+quest.name,GD1 - Guardians of Deephall (v1.2)
+quest.description,"A digital adaptation of the Descent Second Edition quest - Guardians of Deephall (Act I).\n\nv1.1 - Added start round messaging, new custom monster activations, perils, minor flow changes, typo corrections.\nv1.2 - Added Rumor Quest support, minor adjustments.\n\nPlease report bugs at https://github/afellowspelunker/GuardiansofDeephall/issues."
 quest.synopsys,A digital adaptation of the Descent quest <b>Guardians of Deephall</b>.
 quest.authors,afellowspelunker
 quest.authors_short,afellowspelunker
 Token21BObject1.button1,{action} Clear Rubble
-TokenSearch2Players1.text,<i>Something near the wall of the cave glints in the dim light.</i>
-Door21B.text,<i>This sturdy door is heavily worn with many scratch marks on its surface.  Yet, it is still as solid as it was when constructed many years ago.</i>
-Door21B.button1,{action} Open Door
-EventPlaceTiles2.button1,Continue
-Token21BRed1.text,"<i>This is a tunnel!</i>\n\n<b>Special Rules:</b>\nFaceup Red objective tokens are tunnels.\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.  If it does, place that figure on the tunnel.  The tunnel is now infested.\n\nEach monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.\n\nIf a monster is removed from a space containing an infested tunnel, that tunnel is no longer infested.  If a monster on an infested tunnel is defeated, the tunnel becomes a pile of rubble.\n\nTunnels block movement.\n\n<b>Has a monster been defeated while infesting this tunnel?</b>"
-EventTokenSearch2Players1.text,"<i>You manage to pull something from the debris!</i>\n\nDraw a Search card and remove this token."
-EventTokenSearch2Players1.button1,Continue
+TokenSearch2Players2.button1,{action} Search
+Door5B.button1,{action} Open Door
+Spawn10BInitialDeephallFleshMoulder.button1,Continue
+EventPlaceTiles2_5B.text,"<i>The door opens to reveal a dust and debris filled cave.  Two crudely built doors are seen to the west and south.  It is eerily quiet here after the intense battle at the moat.  As you peer into the darkness, you can sense some movement coming from deep within.</i>\n\nRemove the door.\n\nPlace 5B and two doors as shown. "
+Token21BRed1.text,"<i>This is a tunnel!</i>\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.\n\n<b>Each monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.</b>\n----------------------------------------\nIf a monster on an infested tunnel is defeated, that tunnel becomes a pile of rubble.\n\n<b>Has a monster been defeated while infesting this tunnel?</b>"
+EventTokenSearch2Players2.button1,Continue
+EventTokenSearch2Players1.text,"<i>The rusty lid creaks as you open it.  Inside the locker you find a useful item.</i>\n\nDraw a Search card and remove this token."
 Door19B.button1,{action} Open Door
-Door19B.text,<i>This door, along with the door to the South, seems to have been built much more recently than the entry door you just came through.  These doors are not as sturdy and seem to have been hastily constructed, with large gaps between the planks.</i>
-EventPlaceTiles3.text,"<i>The door careens open, along with the other door!  Muttered chanting can be heard from the West and loud groans can be heard from the South!</i>\n\nRemove the West and South doors.\n\nPlace 10B, 14A, 16B, 19B, 28B, a transition (between 14A and 16B) and four endcaps as shown."
-EventPlaceSearchTokens2Players1.button1,Continue
+Door19B.text,"<i>This door, along with the door to the south, seems to have been built much more recently than the reinforced entry door you just came through.  These doors are not as sturdy and seem to have been hastily constructed, with large gaps between the planks.</i>\n\nAs an action, an adjacent hero may open the door."
+EventPlaceTiles3_16B.button1,Continue
+EventPlaceSearchTokens2Players2.text,Place a search token on 5B as shown.
 Door16B.button1,{action} Open Door
-Door16B.text,<i>This door, along with the door to the West, seems to have been built much more recently than the entry door you just came through.  These doors are not as sturdy and seem to have been hastily constructed, with large gaps between the planks.</i>
-Token5BObject2.text,"<i>This is a pile of rubble.</i>\n\n<b>Special Rules:</b>\nFacedown objective tokens are piles of rubble.\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.  If done, flip that objective token faceup.\n\nFaceup Blue objective tokens are immediately discarded.\nFaceup Red objective tokens are tunnels.\nOnly Flesh Moulders and Zombies can infest tunnels.\n\nPiles of rubble block movement.\n\n<b>Is this pile of rubble being cleared?</b>"
+Door16B.text,"<i>This door, along with the door to the west, seems to have been built much more recently than the reinforced entry door you just came through.  These doors are not as sturdy and seem to have been hastily constructed, with large gaps between the planks.</i>\n\nAs an action, an adjacent hero may open the door."
+Token5BObject2.text,"<i>This is a pile of rubble.</i>\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.\n\n<b>Is this pile of rubble being cleared?</b>"
 Token5BObject2.button1,{action} Clear Rubble
 Token5BObject1.button1,{action} Clear Rubble
-Token5BRed1.button1,Yes
+Token5BRed1.button1,Monster Defeated
 Token19BObject2.button1,{action} Clear Rubble
-Token19BRed2.text,"<i>This is a tunnel!</i>\n\n<b>Special Rules:</b>\nFaceup Red objective tokens are tunnels.\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.  If it does, place that figure on the tunnel.  The tunnel is now infested.\n\nEach monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.\n\nIf a monster is removed from a space containing an infested tunnel, that tunnel is no longer infested.  If a monster on an infested tunnel is defeated, the tunnel becomes a pile of rubble.\n\nTunnels block movement.\n\n<b>Has a monster been defeated while infesting this tunnel?</b>"
-Token19BObject1.text,"<i>This is a pile of rubble.</i>\n\n<b>Special Rules:</b>\nFacedown objective tokens are piles of rubble.\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.  If done, flip that objective token faceup.\n\nFaceup Blue objective tokens are immediately discarded.\nFaceup Red objective tokens are tunnels.\nOnly Flesh Moulders and Zombies can infest tunnels.\n\nPiles of rubble block movement.\n\n<b>Is this pile of rubble being cleared?</b>"
+Token19BRed2.text,"<i>This is a tunnel!</i>\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.\n\n<b>Each monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.</b>\n----------------------------------------\nIf a monster on an infested tunnel is defeated, that tunnel becomes a pile of rubble.\n\n<b>Has a monster been defeated while infesting this tunnel?</b>"
+Token19BObject1.text,"<i>This is a pile of rubble.</i>\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.\n\n<b>Is this pile of rubble being cleared?</b>"
 Token19BObject1.button1,{action} Clear Rubble
-Token16BObject2.text,"<i>This is a pile of rubble.</i>\n\n<b>Special Rules:</b>\nFacedown objective tokens are piles of rubble.\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.  If done, flip that objective token faceup.\n\nFaceup Blue objective tokens are immediately discarded.\nFaceup Red objective tokens are tunnels.\nOnly Flesh Moulders and Zombies can infest tunnels.\n\nPiles of rubble block movement.\n\n<b>Is this pile of rubble being cleared?</b>"
+Token16BObject2.text,"<i>This is a pile of rubble.</i>\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.\n\n<b>Is this pile of rubble being cleared?</b>"
 Token16BObject2.button1,{action} Clear Rubble
-Token16BObject1.text,"<i>This is a pile of rubble.</i>\n\n<b>Special Rules:</b>\nFacedown objective tokens are piles of rubble.\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.  If done, flip that objective token faceup.\n\nFaceup Blue objective tokens are immediately discarded.\nFaceup Red objective tokens are tunnels.\nOnly Flesh Moulders and Zombies can infest tunnels.\n\nPiles of rubble block movement.\n\n<b>Is this pile of rubble being cleared?</b>"
+Token16BObject1.text,"<i>This is a pile of rubble.</i>\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.\n\n<b>Is this pile of rubble being cleared?</b>"
 Token16BObject1.button1,{action} Clear Rubble
-EventStart.button1,EventStart.button1
+EventStart.button1,Button1
 EventSetup.button1,Continue
-SpawnOpenGroup21B.text,"<i>The invasion vanguard is crossing the moat!\n\nPlace the {type} group on 21B as shown.</i>"
 TokenSearch3Players.button1,{action} Search
-TokenSearch4Players.text,<i>Someone carelessly dropped something here, perhaps they were in great haste to depart this place.</i>
-TokenSearch3Players.text,<i>Propped upright against the wall, a humanoid corpse is grasping something in it's hand.</i>
+TokenSearch4Players.text,"<i>A small velvet purse is wedged between two cobblestones.</i>\n\nAs an action, an adjacent hero may search the purse."
+TokenSearch3Players.text,"<i>A humanoid corpse is propped up into a sitting position against the wall.\nIt is grasping something in it's hand.</i>\n\nAs an action, an adjacent hero may search the corpse."
 TokenSearch4Players.button1,{action} Search
-EventPlaceTiles2.text,"<i>The door opens to reveal a dust and debris filled cave.  Two crudely built doors are seen to the West and South.  It is eerily quiet here after the intense battle at the moat.  As you peer into the darkness, you can sense some movement coming from deep within.</i>\n\nRemove the door.\n\nPlace 5B and two doors as shown. "
-EventPlaceSearchTokens2Players1.text,"<i>Something near the wall of the cave glints in the dim light.</i>\n\nPlace a search token on 5B as shown."
-EventPlaceSearchTokens3Players.text,"<i>A humanoid corpse is propped upright against the wall to the West.</i>\n\nPlace a search token on 19B as shown."
+EventPlaceTiles3_16B.text,"<i>The door careens open.  For some reason, the other door had a common bracing timber and with that support gone, it also opens!\nMuttered chanting can be heard from the west and loud groans can be heard from the south!</i>\n\nRemove the west and south doors on 5A.\n\nPlace 10B, 14A, 16B, 19B, 28B, a transition (between 14A and 16B) and four endcaps as shown."
+TokenSearch2Players1.text,"<i>A waterlogged locker sits in the corner.</i>\n\nAs an action, an adjacent hero may search the locker."
+EventPlaceSearchTokens3Players.text,Place a search token on 19B as shown.
 EventPlaceSearchTokens3Players.button1,Continue
-EventPlaceSearchTokens4Players.text,"<i>A humanoid corpse is propped upright against the wall to the West and a small purse lies on the ground to the South.</i>\n\nPlace search tokens as shown."
+EventPlaceSearchTokens4Players.text,Place a search token on 16B as shown.
 EventPlaceSearchTokens4Players.button1,Continue
-EventTokenSearch3Players.text,"<i>You manage to wrestle an old moldy leather pouch from its grasp!</i>\n\nDraw a Search card and discard this token."
+EventTokenSearch3Players.text,"<i>You manage to wrestle an old moldy leather pouch from its grasp!\nInside the pouch is a useful item and 25 gold.</i>\n\nDraw a Search card and discard this token."
 EventTokenSearch3Players.button1,Continue
-EventTokenSearch4Players.text,"<i>You find a small velvet purse lodged between two cobblestones!</i>\n\nDraw a Search card and remove this token."
+EventTokenSearch4Players.text,"<i>Inside the purse you find a useful item.\nYou also find 25 gold.</i>\n\nDraw a Search card and remove this token."
 EventTokenSearch4Players.button1,Continue
-SpawnDeephallFleshMoulder.button1,Continue
-SpawnDarkPriest1.text,"Place two minion {type} on 10B as shown.\n\n<b>Special Rule:</b>\n\nAdd 1 grey die to each {type}'s defense pool."
-SpawnDarkPriest1.button1,Continue
-SpawnDarkPriest2.text,"Place one master and one minion {type} on 14A as shown.\n\n<b>Special Rule:</b>\n\nAdd 1 grey die to each {type}'s defense pool."
-SpawnDarkPriest2.button1,Continue
-EventSetup.text,"Set aside the following tiles:\n\n5B, 10B, 14A, 16B, 19B, 21B, 28B, the entrance, one transition and four endcaps.\n\nCollect three red and four blue objective tokens.  Turn these tokens facedown, shuffle them, then place them in your play area."
-EventPlaceTiles1.text,"Place the entrance, 21B and one door as shown.\n\nPlace the heroes on the entrance.\n\n(Note: The objective tokens located near the entrance are for special rules.)"
-EventPlaceTiles1.button1,Continue
-EventSetupComplete1.button1,Continue
-EventSetupComplete2.text,"Setup complete.\n\n<b>Objective:</b>\nPrevent the undead from infesting tunnels to gain access to the Deephall Stronghold."
+Spawn10BInitialDeephallFleshMoulder.text,"<i>The chanting grows louder as the creatures responsible come closer!</i>\n\nPlace the {type} group on 10B as shown."
+Spawn10BInitialDarkPriest1.button1,Continue
+Spawn14AInitialDeephallZombie.button1,Continue
+Spawn14AInitialDarkPriest2.button1,Continue
+EventSetup.text,"Set aside the following tiles:\n\n5, 10, 14, 16, 19, 21, 28, the Entrance, one transition and four endcaps.\n\nCollect three red and four blue objective tokens.  Turn these tokens facedown, shuffle them, then place them facedown in your play area."
+EventPlaceTiles1_Entrance.button1,Continue
+EventSpawn21BInitial.button1,Button1
+EventPlaceSearchToken2Players1.button1,Continue
+EventTokenSearch2Players1.button1,Continue
 EventEndRoundEvents.button1,Continue
-EventCheckVictory.button1,Yes
-EventVictory.text,"<i>The fallen bodies of the undead and their vicious leaders lie around you.  The guards let out cheers as you and Jahrohd breathe deep sighs of relief.  Deephall is safe for now.</i>\n\n<b>The heroes have won this encounter!</b>"
+EventVictoryCheck.button2,No
+EventVictory.text,|||<i>The fallen bodies of the undead and their vicious leaders lie around you.  The guards let out cheers as you and Jahrohd breathe deep sighs of relief.  Deephall is safe for now.</i>\n\n<b>The heroes have won this encounter!</b>\n\nIf playing as a rumor quest:\nPlace the "The Curse of Iona" Advanced Quest card into play.\n\n<i>The nearby town celebrates your victory!</i>\n\nIncluding your findings, the heroes receive {var:GoldQuest} gold.  You can track this gold manually during a campaign and spend it when at the campaign shop.|||
 EventVictory.button1,Continue
 EventEndRound.button1,Continue
-EventDefeat.text,"<i>The stronghold is breached!  You try to ignore the screams as you reseal the tunnels and drive the remaining zombies back.  Now you can only hope the guards inside the stronghold can destroy the undead that got through before too many innocents are slain.</i>\n\n<b>The heroes have lost this encounter!</b>"
+EventDefeat.text,|||<i>The stronghold is breached!  You try to ignore the screams as you reseal the tunnels and drive the remaining zombies back.  Now you can only hope the guards inside the stronghold can destroy the undead that got through before too many innocents are slain.</i>\n\n<b>The heroes have lost this encounter!</b>\n\nIf playing as a rumor quest:\nPlace the "The Curse of Iona" Advanced Quest card into play.\nPlace the "Power in Numbers" Overlord card into play and draw 1 Rumor card.\n\n<i>The nearby town is thankful for your efforts.</i>\n\nIncluding your findings, the heroes receive {var:GoldQuest} gold.  You can track this gold manually during a campaign and spend it when at the campaign shop.|||
 EventDefeat.button1,Continue
-Event19BRedToken2.text,"<i>Clearing this rubble has revealed a tunnel!</i>\n\nPlace the red objective token as shown."
+Event19BRedToken2.text,"<i>Clearing the rubble has revealed a tunnel!</i>\n\nPlace the red objective token faceup as shown."
 Event19BBlueToken2.text,"<i>This pile of rubble has been cleared but there is no sign of a tunnel here.</i>\n\nDiscard this objective token."
 Event21BFlipToken1.button2,Blue
-Event21BFlipToken1.text,"Flip the token faceup.\n\nIs the token a red or blue objective token?"
+Event21BFlipToken1.text,"Flip the objective token faceup.\n\n<b>Is the objective token Red or Blue?</b>"
 Event21BBlueToken1.button1,Continue
 Event21BFlipToken1.button1,Red
 Event21BBlueToken1.text,"<i>This pile of rubble has been cleared but there is no sign of a tunnel here.</i>\n\nDiscard this objective token."
-Event21BRedToken1.text,"<i>Clearing this rubble has revealed a tunnel!</i>\n\nPlace the red objective token as shown."
+Event21BRedToken1.text,"<i>Clearing the rubble has revealed a tunnel!</i>\n\nPlace the red objective token faceup as shown."
 Event21BRedToken1.button1,Continue
-Event19BFlipToken2.text,"Flip the token faceup.\n\nIs the token a red or blue objective token?"
-Token19BObject2.text,"<i>This is a pile of rubble.</i>\n\n<b>Special Rules:</b>\nFacedown objective tokens are piles of rubble.\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.  If done, flip that objective token faceup.\n\nFaceup Blue objective tokens are immediately discarded.\nFaceup Red objective tokens are tunnels.\nOnly Flesh Moulders and Zombies can infest tunnels.\n\nPiles of rubble block movement.\n\n<b>Is this pile of rubble being cleared?</b>"
-Event5BRedToken2.text,"<i>Clearing this rubble has revealed a tunnel!</i>\n\nPlace the red objective token as shown."
+Event19BFlipToken2.text,"Flip the objective token faceup.\n\n<b>Is the objective token Red or Blue?</b>"
+Token19BObject2.text,"<i>This is a pile of rubble.</i>\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.\n\n<b>Is this pile of rubble being cleared?</b>"
+Event5BRedToken2.text,"<i>Clearing the rubble has revealed a tunnel!</i>\n\nPlace the red objective token faceup as shown."
 Event5BRedToken2.button1,Continue
-Token5BRed2.button1,Yes
-Event5BFlipToken2.text,"Flip the token faceup.\n\nIs the token a red or blue objective token?"
+Token5BRed2.button1,Monster Defeated
+Event5BFlipToken2.text,"Flip the objective token faceup.\n\n<b>Is the objective token Red or Blue?</b>"
 Event5BFlipToken2.button1,Red
 Event5BFlipToken1.button1,Red
 Event5BFlipToken1.button2,Blue
 Event19BFlipToken2.button1,Red
 Event19BFlipToken2.button2,Blue
-Event19BFlipToken1.text,"Flip the token faceup.\n\nIs the token a red or blue objective token?"
+Event19BFlipToken1.text,"Flip the objective token faceup.\n\n<b>Is the objective token Red or Blue?</b>"
 Event19BFlipToken1.button1,Red
-Event16BFlipToken2.text,"Flip the token faceup.\n\nIs the token a red or blue objective token?"
+Event16BFlipToken2.text,"Flip the objective token faceup.\n\n<b>Is the objective token Red or Blue?</b>"
 Event16BFlipToken2.button1,Red
-Event16BFlipToken1.text,"Flip the token faceup.\n\nIs the token a red or blue objective token?"
+Event16BFlipToken1.text,"Flip the objective token faceup.\n\n<b>Is the objective token Red or Blue?</b>"
 Event16BFlipToken1.button1,Red
 Event5BFlipToken2.button2,Blue
 Event19BRedToken2.button1,Continue
@@ -96,19 +94,19 @@ Event19BFlipToken1.button2,Blue
 Event16BFlipToken1.button2,Blue
 Event16BFlipToken2.button2,Blue
 Event5BBlueToken2.button1,Continue
-Token5BRed2.text,"<i>This is a tunnel!</i>\n\n<b>Special Rules:</b>\nFaceup Red objective tokens are tunnels.\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.  If it does, place that figure on the tunnel.  The tunnel is now infested.\n\nEach monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.\n\nIf a monster is removed from a space containing an infested tunnel, that tunnel is no longer infested.  If a monster on an infested tunnel is defeated, the tunnel becomes a pile of rubble.\n\nTunnels block movement.\n\n<b>Has a monster been defeated while infesting this tunnel?</b>"
+Token5BRed2.text,"<i>This is a tunnel!</i>\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.\n\n<b>Each monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.</b>\n----------------------------------------\nIf a monster on an infested tunnel is defeated, that tunnel becomes a pile of rubble.\n\n<b>Has a monster been defeated while infesting this tunnel?</b>"
 Event5BRedToken1.button1,Continue
-Event5BFlipToken1.text,"Flip the token faceup.\n\nIs the token a red or blue objective token?"
-Event19BRedToken1.text,"<i>Clearing this rubble has revealed a tunnel!</i>\n\nPlace the red objective token as shown."
-Token5BRed1.text,"<i>This is a tunnel!</i>\n\n<b>Special Rules:</b>\nFaceup Red objective tokens are tunnels.\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.  If it does, place that figure on the tunnel.  The tunnel is now infested.\n\nEach monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.\n\nIf a monster is removed from a space containing an infested tunnel, that tunnel is no longer infested.  If a monster on an infested tunnel is defeated, the tunnel becomes a pile of rubble.\n\nTunnels block movement.\n\n<b>Has a monster been defeated while infesting this tunnel?</b>"
+Event5BFlipToken1.text,"Flip the objective token faceup.\n\n<b>Is the objective token Red or Blue?</b>"
+Event19BRedToken1.text,"<i>Clearing the rubble has revealed a tunnel!</i>\n\nPlace the red objective token faceup as shown."
+Token5BRed1.text,"<i>This is a tunnel!</i>\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.\n\n<b>Each monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.</b>\n----------------------------------------\nIf a monster on an infested tunnel is defeated, that tunnel becomes a pile of rubble.\n\n<b>Has a monster been defeated while infesting this tunnel?</b>"
 Event19BRedToken1.button1,Continue
-Event16BRedToken1.text,"<i>Clearing this rubble has revealed a tunnel!</i>\n\nPlace the red objective token as shown."
+Event16BRedToken1.text,"<i>Clearing the rubble has revealed a tunnel!</i>\n\nPlace the red objective token faceup as shown."
 Event16BRedToken1.button1,Continue
-Event16BRedToken2.text,"<i>Clearing this rubble has revealed a tunnel!</i>\n\nPlace the red objective token as shown."
+Event16BRedToken2.text,"<i>Clearing the rubble has revealed a tunnel!</i>\n\nPlace the red objective token faceup as shown."
 Event16BRedToken2.button1,Continue
 Event5BBlueToken2.text,"<i>This pile of rubble has been cleared but there is no sign of a tunnel here.</i>\n\nDiscard this objective token."
 Event5BBlueToken1.button1,Continue
-Event5BRedToken1.text,"<i>Clearing this rubble has revealed a tunnel!</i>\n\nPlace the red objective token as shown."
+Event5BRedToken1.text,"<i>Clearing the rubble has revealed a tunnel!</i>\n\nPlace the red objective token faceup as shown."
 Event19BBlueToken2.button1,Continue
 Event19BBlueToken1.text,"<i>This pile of rubble has been cleared but there is no sign of a tunnel here.</i>\n\nDiscard this objective token."
 Event19BBlueToken1.button1,Continue
@@ -116,40 +114,40 @@ Event16BBlueToken1.text,"<i>This pile of rubble has been cleared but there is no
 Event16BBlueToken1.button1,Continue
 Event16BBlueToken2.text,"<i>This pile of rubble has been cleared but there is no sign of a tunnel here.</i>\n\nDiscard this objective token."
 Event16BBlueToken2.button1,Continue
-SpawnOpenGroup5B.text,"<i>The creatures in this cave repond to your presence!</i>\n\nPlace the {type} group on 5B as shown."
-EventDarkPriestsYell.text,|||<i>From down the West and South corridors you can hear excited yelling from what you assume are the invasion leaders that Captain Jahrohd mentioned.  It's hard to make out exactly what they are saying, but by the tone, it doesn't sound like good news.\n\n<i>"Thanks ... clearing ... cave.  We ... now ... advance ... your stronghold!"</i></i>|||
-Token21BRed1.button1,Yes
-Token19BRed2.button1,Yes
-Token5BObject1.text,"<i>This is a pile of rubble.</i>\n\n<b>Special Rules:</b>\nFacedown objective tokens are piles of rubble.\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.  If done, flip that objective token faceup.\n\nFaceup Blue objective tokens are immediately discarded.\nFaceup Red objective tokens are tunnels.\nOnly Flesh Moulders and Zombies can infest tunnels.\n\nPiles of rubble block movement.\n\n<b>Is this pile of rubble being cleared?</b>"
-Token19BRed1.text,"<i>This is a tunnel!</i>\n\n<b>Special Rules:</b>\nFaceup Red objective tokens are tunnels.\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.  If it does, place that figure on the tunnel.  The tunnel is now infested.\n\nEach monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.\n\nIf a monster is removed from a space containing an infested tunnel, that tunnel is no longer infested.  If a monster on an infested tunnel is defeated, the tunnel becomes a pile of rubble.\n\nTunnels block movement.\n\n<b>Has a monster been defeated while infesting this tunnel?</b>"
-Token19BRed1.button1,Yes
-Token16BRed1.text,"<i>This is a tunnel!</i>\n\n<b>Special Rules:</b>\nFaceup Red objective tokens are tunnels.\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.  If it does, place that figure on the tunnel.  The tunnel is now infested.\n\nEach monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.\n\nIf a monster is removed from a space containing an infested tunnel, that tunnel is no longer infested.  If a monster on an infested tunnel is defeated, the tunnel becomes a pile of rubble.\n\nTunnels block movement.\n\n<b>Has a monster been defeated while infesting this tunnel?</b>"
-Token16BRed1.button1,Yes
-Token16BRed2.text,"<i>This is a tunnel!</i>\n\n<b>Special Rules:</b>\nFaceup Red objective tokens are tunnels.\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.  If it does, place that figure on the tunnel.  The tunnel is now infested.\n\nEach monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.\n\nIf a monster is removed from a space containing an infested tunnel, that tunnel is no longer infested.  If a monster on an infested tunnel is defeated, the tunnel becomes a pile of rubble.\n\nTunnels block movement.\n\n<b>Has a monster been defeated while infesting this tunnel?</b>"
-Token16BRed2.button1,Yes
+TokenArmoredPriestsInfo.text,"<b>Armored Priests</b>\nThe heavily armored priests may include:\nDark Priest, Sorcerer, Goblin Witcher, or Goblin Archer\n\nAll four types are wearing heavy armor.\n<b>Add 1 grey die to each of their defense pools.</b>"
+EventDarkPriestsYell.text,|||<i>From down the west and south corridors you can hear excited yelling from what you assume are the armored priests that Captain Jahrohd mentioned.  It's hard to make out exactly what they are saying, but by the tone, it doesn't sound like good news.\n\n<i>"Thanks ... clearing ... cave.  We ... now ... advance ... your stronghold!"</i></i>|||
+Token21BRed1.button1,Monster Defeated
+Token19BRed2.button1,Monster Defeated
+Token5BObject1.text,"<i>This is a pile of rubble.</i>\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.\n\n<b>Is this pile of rubble being cleared?</b>"
+Token19BRed1.text,"<i>This is a tunnel!</i>\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.\n\n<b>Each monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.</b>\n----------------------------------------\nIf a monster on an infested tunnel is defeated, that tunnel becomes a pile of rubble.\n\n<b>Has a monster been defeated while infesting this tunnel?</b>"
+Token19BRed1.button1,Monster Defeated
+Token16BRed1.text,"<i>This is a tunnel!</i>\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.\n\n<b>Each monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.</b>\n----------------------------------------\nIf a monster on an infested tunnel is defeated, that tunnel becomes a pile of rubble.\n\n<b>Has a monster been defeated while infesting this tunnel?</b>"
+Token16BRed1.button1,Monster Defeated
+Token16BRed2.text,"<i>This is a tunnel!</i>\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.\n\n<b>Each monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.</b>\n----------------------------------------\nIf a monster on an infested tunnel is defeated, that tunnel becomes a pile of rubble.\n\n<b>Has a monster been defeated while infesting this tunnel?</b>"
+Token16BRed2.button1,Monster Defeated
 CustomMonsterDeephallZombie.monstername,Deephall Zombie
 ActivationDeephallZombie.minion,"{action} Infest an adjacent non-infested tunnel (if this is the first movement action this turn).\n{action} Engage the closest non-infested tunnel, rubble or hero, in that preferred order.\n{action} Clear an adjacent rubble.\n{action} Attack an adjacent hero."
 ActivationDeephallZombie.master,"{action} Infest an adjacent non-infested tunnel (if this is the first movement action this turn).\n{action} Engage the closest non-infested tunnel, rubble or hero, in that preferred order.\n{action} Clear an adjacent rubble.\n{action} Grab an adjacent hero.\n{action} Attack an adjacent hero."
 EventStartRound.button1,Continue
 EventStartRoundEvents.button1,Continue
-SpawnStartRoundTombSpawn.text,"<i>You hear more creatures stirring from the West.</i>\n\nPlace two {type} on 10B as shown, respecting group limits."
-SpawnStartRoundTombSpawn.button1,Continue
-SpawnStartRoundGraveyardSpawn.text,"<i>You see more creatures approaching from the South.</i>\n\nPlace two {type} on 14A as shown, respecting group limits."
+SpawnStartRoundReinforce.text,"<i>You hear more chanting coming from the west!</i>\n\nPlace two {type} on 10B as shown, respecting group limits."
+SpawnStartRoundReinforce.button1,Continue
+SpawnStartRoundGraveyardSpawn.text,"<i>You see more creatures approaching from the south!</i>\n\nPlace two {type} on 14A as shown, respecting group limits."
 SpawnStartRoundGraveyardSpawn.button1,Continue
 EventDarkPriestsYell.button1,Continue
-SpawnDeephallZombie.button1,Continue
+Spawn14AInitialDeephallZombie.text,"<i>You hear the sounds of slow shambling groans approaching!</i>\n\nPlace the {type} group on 14A as shown."
 ActivationDeephallZombie.ability,Each Deephall Zombie gains +1 Speed.
-SpawnDeephallZombie.text,"<i>You see some creatures approaching from the South.</i>\n\nPlace the {type} group on 14A as shown."
+Spawn14AInitialDarkPriest2.text,"<i>Heavily armored robed figures move toward you!</i>\n\nPlace {type}s on 14A as shown.\n\n<b>Add 1 grey die to each {type}'s defense pool.</b>"
 CustomMonsterDeephallZombie.info,"Deephall Zombies spend {surge} in the following order:\n{surge}: Disease\n{surge}: +X {heart}\n\nWhile engaging a non-infested tunnel or pile of rubble, Deephall Zombies will prefer a non-infested tunnel if within the same distance.\n\nDeephall Zombies will not willingly move out of an infested tunnel space."
 CustomMonsterDeephallFleshMoulder.info,"Deephall Flesh Moulders spend {surge} in the following order:\n{surge}: Mend X\n{surge}: +X {heart}\n\nMend:  Deephall Flesh Moulders only use Mend if they have suffered {heart} equal to or greater than X.\n\nHeal:  Deephall Flesh Moulders only use Heal on a monster if that monster has suffered at least one {heart}.\n\nWhile engaging a non-infested tunnel or pile of rubble, Deephall Flesh Moulders will prefer a non-infested tunnel if within the same distance.\n\nDeephall Flesh Moulders will not willingly move out of an infested tunnel space."
 ActivationDeephallFleshMoulder.minion,"{action} Engage the closest non-infested tunnel or rubble.\n{action} Infest an adjacent non-infested tunnel.\n{action} Clear an adjacent rubble.\n{action} Mend X on itself.\n{action} Attack a hero within three spaces with the most Health remaining.\n{action} If within two spaces of a hero, perform a move action and retreat (if not currently infesting a tunnel)."
 CustomMonsterDeephallFleshMoulder.monstername,Deephall Flesh Moulder
 ActivationDeephallFleshMoulder.master,"{action} Engage the closest non-infested tunnel or rubble.\n{action} Infest an adjacent non-infested tunnel.\n{action} Clear an adjacent rubble.\n{action} Heal a monster within three spaces with the least Health remaining.\n{action} Attack a hero within three spaces with the least Health remaining.\n{action} If within two spaces of a hero, perform a move action and retreat (if not currently infesting a tunnel)."
-SpawnDeephallFleshMoulder.text,"<i>You hear some creatures stirring from the West.</i>\n\nPlace the {type} group on 10B as shown."
-EventNoMorale.button1,Continue
-EventNoMoraleDefeat.text,"<i>Though you fought valiantly in defense of the stronghold,  you slip into unconsciousness from your wounds.  Now you can only hope the guards inside the stronghold can destroy the undead that got through before too many innocents are slain.</i>\n\n<b>The heroes have lost this encounter!</b>"
-EventNoMoraleDefeat.button1,Continue
-Event21BFlipRubble1.text,"Flip this token over.\n\nIt is now a pile of rubble."
+Spawn10BInitialDarkPriest1.text,"<i>Heavily armored robed figures move toward you!</i>\n\nPlace {type}s on 10B as shown.\n\n<b>Add 1 grey die to each {type}'s defense pool.</b>"
+EventNoMorale.button1,Button1
+TokenSearch2Players1.button1,{action} Search
+TokenSearch2Players2.text,"<i>An iron strongbox is wedged in the debris of the cave.</i>\n\nAs an action, an adjacent hero may search the strongbox."
+Event21BFlipRubble1.text,"<i>The tunnel's entrance is covered with a pile of rubble!</i>\n\nFlip this objective token facedown.  It is now a pile of rubble."
 Event21BFlipRubble1.button1,Continue
 Event5BFlipRubble2.button1,Continue
 Event5BFlipRubble1.button1,Continue
@@ -162,24 +160,23 @@ Event19BFlipRubble1.text,"Flip this token over.\n\nIt is now a pile of rubble."
 Event16BFlipRubble1.text,"Flip this token over.\n\nIt is now a pile of rubble."
 Event16BFlipRubble1.button1,Continue
 Event16BFlipRubble2.text,"Flip this token over.\n\nIt is now a pile of rubble."
-Token21BObject1.text,"<i>This is a pile of rubble.</i>\n\n<b>Special Rules:</b>\nFacedown objective tokens are piles of rubble.\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.  If done, flip that objective token faceup.\n\nFaceup Blue objective tokens are immediately discarded.\nFaceup Red objective tokens are tunnels.\nOnly Flesh Moulders and Zombies can infest tunnels.\n\nPiles of rubble block movement.\n\n<b>Is this pile of rubble being cleared?</b>"
-SpawnOpenGroup21B.button1,Continue
-SpawnOpenGroup5B.button1,Continue
+Token21BObject1.text,"<i>This is a pile of rubble.</i>\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.\n\n<b>Is this pile of rubble being cleared?</b>"
+EventVictoryCheck.button1,Yes
+TokenTunnelInfo.button1,Continue
 Event5BFlipRubble1.text,"Flip this token over.\n\nIt is now a pile of rubble."
 Event5BBlueToken1.text,"<i>This pile of rubble has been cleared but there is no sign of a tunnel here.</i>\n\nDiscard this objective token."
 ActivationDeephallFleshMoulder.ability,Each attack gains Pierce 1.
-EventPlace21BObject1.text,"<i>You see a pile of rubble on the other side of the moat.</i>\n\nPlace one objective token from your play area facedown on 21B as shown."
+EventPlace21BObject1.text,"<i>You see a pile of rubble on the other side of the moat.</i>\n\nPlace a facedown objective token from your play area facedown on 21B as shown.\n<b>Do not reveal the color of the objective token.</b>"
 EventPlace21BObject1.button1,Continue
 EventPlace5BObjects1and2.button1,Continue
-EventPlace5BObjects1and2.text,"<i>You see two piles of rubble in the cave.</i>\n\nPlace two objective tokens from your play area facedown on 5B as shown."
-EventSetupComplete1.text,"Setup complete.\n\n<b>Objective:</b>\nPrevent the undead from gaining access to the Deephall Stronghold."
-EventSetupComplete2.button1,Continue
-EventPlace16B19BObjects.text,"<i>You notice more piles of rubble in the area.</i>\n\nPlace four objective tokens from your play area facedown as shown."
-EventPlace16B19BObjects.button1,Continue
-EventSetupComplete3.text,"Setup complete.\n\n<b>Objective:</b>\nPrevent the undead from infesting three tunnels."
-EventSetupComplete3.button1,Continue
-TokenSearch2Players1.button1,{action} Search
-EventPlaceTiles3.button1,Continue
+EventPlace5BObjects1and2.text,"<i>You see two piles of rubble in the cave.</i>\n\nPlace two objective tokens from your play area facedown on 5B as shown.\n<b>Do not reveal the color of the objective tokens.</b>"
+EventPlaceTiles2_5B.button1,Continue
+EventInsightKnowledgeTest.button2,Fail
+EventPlace16B19BObjectiveTokens.button1,Continue
+EventSetupComplete.button1,Continue
+Door5B.text,"<i>This reinforced door is heavily worn with many scratch marks on its surface.  Yet, it is still as solid as it was when it was constructed many years ago.</i>\n\nAs an action, an adjacent hero may open the door."
+EventPlaceSearchTokens2Players2.button1,Continue
+EventPlaceSearchToken2Players1.text,Place a search token on 21B as shown.
 ActivationFMTunnel.ability,Each attack gains +1 {surge}.
 ActivationFMAttack1.minion,"{action} Spot the closest hero.\n{action} Attack the hero within three spaces with the lowest {might}.\n{action} If within two spaces of a hero, perform a move action and retreat."
 ActivationFMAttack2.ability,Each time a Deephall Flesh Moulder recovers {heart}, each monster within 3 spaces that is not a Deephall Flesh Moulder recovers 1 {heart}.
@@ -188,76 +185,101 @@ ActivationFMAttack1.ability,Each time a hero suffers {heart}, the closest monste
 ActivationFMAttack1.master,"{action} Spot the hero with the most {fatigue} suffered.\n{action} Attack the hero within three spaces with the most {fatigue} suffered.\n{action} If within two spaces of a hero, perform a move action and retreat."
 ActivationFMAttack2.minion,"{action} Spot the closest hero.\n{action} Attack the closest hero.\n{action} If within two spaces of a hero, perform a move action and retreat."
 ActivationFMAttack2.master,"{action} Spot the monster with the most {heart} suffered.\n{action} Use Heal on a monster.\n{action} Spot the closest hero.\n{action} Attack the closest hero.\n{action} If within two spaces of a hero, perform a move action and retreat,"
-ActivationZombieTunnel.master,"{action} Infest an adjacent non-infested tunnel (if this is the first movement action this turn).\n{action} Engage the closest non-infested tunnel or rubble.\n{action} Clear an adjacent pile of rubble.\n{action} Attack a hero."
-ActivationZombieTunnel.minion,"{action} Infest an adjacent non-infested tunnel (if this is the first movement action this turn).\n{action} Engage the closest non-infested tunnel or rubble.\n{action} Clear an adjacent pile of rubble.\n{action} Attack a hero."
+ActivationZombieTunnel.master,"{action} Infest an adjacent non-infested tunnel (first movement action this turn).\n{action} Engage the closest non-infested tunnel or rubble.\n{action} Clear an adjacent pile of rubble.\n{action} Attack a hero."
+ActivationZombieTunnel.minion,"{action} Infest an adjacent non-infested tunnel (first movement action this turn).\n{action} Engage the closest non-infested tunnel or rubble.\n{action} Clear an adjacent pile of rubble.\n{action} Attack a hero."
 ActivationZombieAttack1.minion,"{action} Engage the closest hero who is not Immobilized.\n{action} Attack a hero.\n{action} Engage the closest hero.\n{action} Clear an adjacent pile of rubble."
 ActivationZombieAttack2.master,"{action} Engage the closest hero who is not Diseased.\n{action} Attack a hero.\n{action} Engage the closest hero.\n{action} Clear an adjacent pile of rubble."
 ActivationZombieAttack1.master,"{action} Engage the closest hero who is not Immobilized.\n{action} Attack a hero.\n{action} Engage the closest hero.\n{action} Clear an adjacent pile of rubble."
 ActivationZombieAttack1.ability,After each Deephall Zombie's activation, that Deephall Zombie performs Grab on an adjacent hero with the lowest {might}.
-EventCheckVictory.button2,No
-EventCheckVictory.text,"Are there two or fewer Flesh Moulders and Zombies on the map?\n\n(If you select Yes, this will end the encounter in Victory!)"
-EventCheckTunnels.text,"Are three tunnels currently infested?\n\n(If you select Yes, this will end the encounter in Defeat!)"
-EventCheckTunnels.button1,Yes
-EventCheckTunnels.button2,No
+EventVictoryCheck.text,"Are there two or fewer Flesh Moulders and Zombies on the map?\n\n(If you select Yes, the encounter will end.)"
+EventDefeatCheck.text,"Are three tunnels currently infested?\n\n(If you select Yes, the encounter will end.)"
+EventDefeatCheck.button1,Yes
+EventDefeatCheck.button2,No
 EventInsightTest.button1,Test {knowledge}
 EventInsightTest.button2,Test {awareness}
-EventKnowledgeTest.button2,Fail
-EventKnowledgeTest.text,Did you Pass or Fail the {knowledge} test?
-EventAwarenessTest.button1,Pass
-EventKnowledgePass.text,<i>You recall from research you had done in the past that the {c:SpawnDarkPriest1}s, wearing a certain magical pendant, could summon the undead.</i>
-EventKnowledgePass.button1,Continue
-EventKnowledgeFail.text,<i>Oh nevermind.  Perhaps your hunger is playing tricks with your mind.  You should probably get something to eat soon.</i>
-EventKnowledgeFail.button1,Continue
-EventAwarenessTest.text,Did you Pass or Fail the {awareness} test?
-EventAwarenessTest.button2,Fail
-EventAwarenessPass.text,<i>You notice, right before new undead creatures arrive, the {c:SpawnDarkPriest1}s tap an oddly glowing pendant they are wearing.</i>
-EventAwarenessPass.button1,Continue
-EventAwarenessFail.button1,Continue
-EventAwarenessFail.text,<i>Oh nevermind.  Perhaps the lighting is playing tricks with your mind.</i>
-EventInitializeDifficultyValues.button1,EventInitializeDifficultyValues.button1
-EventCheckDifficulty.text,"<b>Guardians of Deephall</b> \n(Act I)\n\nSelect a Difficulty Level:\n\n<b>Normal:</b>\nHeroes start with {var:StartXpNormal} XP and {var:StartGoldPerHeroNormal} gold per hero.\n\n<b>Hard:</b>\nHeroes start with {var:StartXpHard} XP and {var:StartGoldPerHeroHard} gold per hero."
-EventCheckDifficulty.button1,Normal
-EventCheckDifficulty.button2,Hard
-EventInitializeNormal.button1,EventInitializeNormal.button1
-EventInitializeGold.button1,EventInitializeGold.button1
-EventInitializeHard.button1,EventInitializeHard.button1
+EventInsightKnowledgeTest.text,"<i>You try to remember some research you had done in the past...</i>\n\n<b>Did you Pass or Fail the {knowledge} test?</b>"
+EventInsightKnowledgeTest.button1,Pass
+EventInsightAwarenessTest.text,"<i>You think you spot something unusual about one of the creatures...</i>\n\n<b>Did you Pass or Fail the {awareness} test?</b>"
+EventInsightKnowledgePass.button1,Continue
+EventInsightKnowledgeFail.text,"<i>You can't seem to recall the research that applies here.\nPerhaps it will come to you later.</i>"
+EventInsightKnowledgeFail.button1,Continue
+EventInsightAwarenessTest.button1,Pass
+EventInsightAwarenessTest.button2,Fail
+EventInsightAwarenessPass.text,<i>You notice, right before new creatures arrive, the {c:Spawn10BInitialDarkPriest1}s tap an oddly glowing pendant that they are wearing.</i>
+EventInsightAwarenessPass.button1,Continue
+EventInsightAwarenessFail.button1,Continue
+EventInsightAwarenessFail.text,<i>Some of the creatures behave oddly, but you can't quite determine what they are doing.  You decide to keep an eye out for any further strange behavior.</i>
+EventTokenSearch2Players2.text,"<i>You manage to free the strongbox from the debris.\nInside the strongbox you find a useful item.\nYou also find 50 gold.</i>\n\nDraw a Search card and remove this token."
+EventInitializeDifficultyValues.button1,Button1
+EventInitializeCheckDifficulty.button1,Normal
+EventInitializeCheckDifficulty.button2,Hard
+EventInitializeCheckDifficulty.button3,Rumor
+EventInitializeNormal.button1,Button1
+EventInitializeGold.button1,Button1
+EventInitializeHard.button1,Button1
 EventLeaveArmoryCheck.text,Are you sure you want to leave the Armory and head to the gate?
 EventLeaveArmoryCheck.button1,Yes
 EventLeaveArmoryCheck.button2,No
-EventInitializeQuestFame.button1,EventInitializeQuestFame.button1
+EventInitializeQuestFame.button1,Button1
 UIIntro.uitext,"<i>Buried in the depths of an isolated mountainside, the Deephall Stronghold is perpetually under siege.\n\nA highly superstitious community, the citizens of Deephall believe that it is essential to separate all that is deemed righteous from all that is deemed wicked, even their own dead.  Long ago, they began the tradition of separating bodies to segregated burial grounds after death based on the judgement of that person's virtue during life.\n\nThen the dead began to rise.  At first they came slowly, in small numbers, and only from the crypt where the evil were buried.  The city was well defended, and the local clergy held this as proof that their superstitions were well founded.  Now they come in droves, from both graveyards, and the guards have begun to lose hope.  This is what you have come to investigate.</i>"
-UIContinue.button1,UIContinue.button1
+UIContinue.button1,Button1
 UIArmory.uitext,Armory
-UIContinue.uitext,Continue
-UIOnward.button1,UIOnward.button1
-EventRemoveTitle2.button1,EventRemoveTitle2.button1
+EventRemoveTitle1.button1,Button1
+UIOnward.button1,Button1
+EventRemoveTitle2.button1,Button1
 UIFortress.button1,UIbg.button1
-UIIntro3.uitext,"<i>After equipping your gear and priming your skills, you run to the gate and look out at the oncoming horde.\n\nThe invaders are already crossing the moat and their leaders seem heavily armored.\n\nYour intuition tells you that simply barricading won't be enough to protect Deephall this time.  You steel yourselves for battle and step out to face the invasion head on.</i>"
+UIIntro3.uitext,"<i>You run to the gate and look out at the oncoming horde.  The undead are already crossing the moat and the dark priests seem heavily armored.\n\nYour intuition tells you that simply barricading won't be enough to protect Deephall this time.  You steel yourselves for battle and step out to face the invasion head on.</i>"
 UIOnward.uitext,Onward!
-EventInitializeQuestVariables.button1,EventInitializeQuestVariables.button1
-EventInsightTest.text,"<i>Suddenly, {rnd:hero} has a flash of insight...</i>\n\nTest either {knowledge} (knowledge) or {awareness} (awareness)."
-EventShopClose.button1,EventShopClose.button1
-EventKnowledgeTest.button1,Pass
-TokenRubbleRules.text,"<b>Special Rules:</b>\nFacedown objective tokens are piles of rubble.\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.  If done, flip that objective token faceup.\n\nFaceup Blue objective tokens are immediately discarded.\nFaceup Red objective tokens are tunnels.\nOnly Flesh Moulders and Zombies can infest tunnels.\n\nPiles of rubble block movement."
-TokenRubbleRules.button1,Continue
-TokenTunnelRules.button1,Continue
-TokenTunnelRules.text,"<b>Special Rules:</b>\nFaceup Red objective tokens are tunnels.\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.  If it does, place that figure on the tunnel.\nThat tunnel is now infested.\n\nEach monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.\n\nIf a monster is removed from a space containing an infested tunnel, that tunnel is no longer infested.\n\nIf a monster on an infested tunnel is defeated, that tunnel then becomes a pile of rubble.\n(Click on that tunnel token to make it into a pile of rubble.)\n\nTunnels block movement."
+EventInitializeQuestVariables.button1,Button1
+EventInsightTest.text,"<i>Suddenly, {rnd:hero} has a flash of insight...</i>\n\n<b>Test either {knowledge} or {awareness}.</b>"
+EventShopClose.button1,Button1
+EventInsightKnowledgePass.text,<i>You recall from your research that the {c:Spawn10BInitialDarkPriest1}s, wearing a certain magical pendant, could summon creatures.</i>
+TokenRubbleInfo.button1,Continue
+TokenTunnelInfo.text,"<b>Tunnels</b>\nFaceup Red objective tokens are tunnels.\nTunnels block movement.\n\nAs a move action, instead of gaining movement points, a <b>flesh moulder</b> or <b>zombie</b> that is adjacent to a tunnel may infest that tunnel.  If it does, place that figure on the tunnel.\nThat tunnel is now infested.\n\n<b>Each monster in a space containing an infested tunnel adds 1 grey defense die to its defense pool.</b>\n\nIf a monster is removed from a space containing an infested tunnel, that tunnel is no longer infested.\n\nIf a monster on an infested tunnel is defeated, that tunnel then becomes a pile of rubble.\n(Click on that tunnel token to make it into a pile of rubble.)"
+TokenRubbleInfo.text,"<b>Piles of Rubble</b>\nFacedown objective tokens are piles of rubble.\nPiles of rubble block movement.\n\nAs an action, while adjacent to a pile of rubble, a <b>hero</b>, <b>flesh moulder</b> or <b>zombie</b> may clear that pile of rubble.  If done, flip that objective token faceup.\n\nFaceup Red objective tokens are tunnels.\nFaceup Blue objective tokens are immediately discarded."
 EventShopOpen.button1,Leave Armory
 EventStartRoundAnnounce.text,<b>New Round!</b>
 EventStartRoundAnnounce.button1,Continue
-UIArmory.button1,UIArmory.button1
-EventRemoveTitle3.button1,EventRemoveTitle3.button1
-UIIntro2.uitext,|||<i>"They're here again!  And they have some vicious leaders with them this time!"\n\nCaptain Jahrohd's shouts to his men echo through the barracks where you've joined the guards.  He turns to you.\n\n"You all came here to help, right?  Well, here's your chance.  Help us barricade the gate.  I just hope my men sealed off those tunnels well enough after last time."  There is a tone of severe desperation in his voice.\n\nWith a griseled look he adds, "Make sure you visit the Armory to check your gear and skills on your way to the gate."</i>|||
+UIArmory.button1,Button1
+EventRemoveTitle3.button1,Button1
+UIIntro2.uitext,|||<i>"They're here again!  And those damned priests are leading them this time!"\n\nCaptain Jahrohd's shouts to his men echo through the barracks where you've joined the guards.  He turns to you.\n\n"You all came here to help, right?  Well, here's your chance.  Help us barricade the gate.  I just hope my men sealed off those tunnels well enough after last time."  There is a tone of severe desperation in his voice.\n\nWith a griseled look he adds, "Make sure you visit the Armory to check your gear and skills on your way to the gate."</i>|||
 ActivationFMTunnel.master,"{action} Engage the closest non-infested tunnel or pile of rubble.\n{action} Infest an adjacent non-infested tunnel.\n{action} Clear an adjacent pile of rubble.\n{action} Attack the closest hero.\n{action} If within two spaces of a hero, perform a move action and retreat."
 ActivationZombieTunnel.ability,Apply +1 Speed to each Deephall Zombie.
 ActivationZombieAttack2.ability,Each attack gains +1 {surge}.
 ActivationZombieAttack2.minion,"{action} Engage the closest hero.\n{action} Attack a hero.\n{action} Clear an adjacent pile of rubble."
-EventPlaceSearchTokens2PlayersCheck.button1,Contine
-EventPerils.button1,EventPerils.button1
-EventPeril1.button1,EventPeril1.button1
-EventEndPeril.button1,EventEndPeril.button1
-EventPeril2.button1,EventPeril2.button1
-EventPeril3.button1,EventPeril3.button1
-EventDeephallArchers8.text,"<i>Answering the clarion call to action, several Deephall archers let loose a volley of arrows!</i>\n\nEach monster on the map suffers 1 {heart}."
-EventPeril4.button1,EventPeril4.button1
+EventSetupComplete.text,"Setup complete.\n\n<b>Objective:</b>\nPrevent Flesh Moulders and Zombies from infesting three tunnels."
+EventPerils.button1,Button1
+EventPeril1.button1,Button1
+EventEndPeril.button1,Button1
+EventPeril2.button1,Button1
+EventPeril3.button1,Button1
+EventDeephallArchers8.text,"<i>Answering the clarion call to action, several Deephall archers on the battlements let loose a volley of arrows!</i>\n\nEach monster on the map suffers 1 {heart}."
+EventPeril4.button1,Button1
 EventDeephallArchers8.button1,Continue
+UIContinueRumor.uitext,Continue
+EventInitializeRumor.button1,Button1
+EventInitializeCheckDifficulty.text,"<b>Guardians of Deephall</b> \n(Act I)\n\nSelect a Level of Difficulty:\n\n<b>Normal:</b>\nHeroes start with {var:StartXpNormal} XP and {var:StartGoldPerHeroNormal} gold per hero.\n\n<b>Hard:</b>\nHeroes start with {var:StartXpHard} XP and {var:StartGoldPerHeroHard} gold per hero.\n\n<b>Rumor:</b>\nHeroes start with their existing XP and gold.\n\nNote:\nIf performing this quest as a Rumor Quest during a campaign, select the Rumor option.  Use your existing equipment and skills."
+UIContinue.uitext,Continue
+UIContinueRumor.button1,Button1
+EventRemoveTitle2Rumor.button1,Button1
+EventPlaceTiles1_Entrance.text,"Place the Entrance, 21B and one door as shown.\n\nPlace the heroes on the Entrance.\n\n(The objective tokens located near the Entrance are for special rules.)"
+Spawn21BInitialCaveSpider.text,"<i>The invasion vanguard is crossing the moat!</i>\n\nPlace the {type} group on 21B as shown."
+Spawn21BInitialCaveSpider.button1,Continue
+Spawn21BInitialCarrionDrake.text,"<i>The invasion vanguard is crossing the moat!</i>\n\nPlace the {type} group on 21B as shown."
+Spawn21BInitialCarrionDrake.button1,Continue
+Spawn21BInitialChangeling.text,"<i>The invasion vanguard is crossing the moat!</i>\n\nPlace the {type} group on 21B as shown."
+Spawn21BInitialChangeling.button1,Continue
+Spawn21BInitialFerrox.text,"<i>The invasion vanguard is crossing the moat!</i>\n\nPlace the {type} group on 21B as shown."
+Spawn21BInitialFerrox.button1,Continue
+EventSpawn5BInitial.button1,Button1
+Spawn5BInitialEttin.text,"<i>Something large and imposing reponds to your presence!</i>\n\nPlace the {type} group on 5B as shown."
+Spawn5BInitialEttin.button1,Continue
+Spawn5BInitialArachyura.text,"<i>Something large and imposing reponds to your presence!</i>\n\nPlace the {type} group on 5B as shown."
+Spawn5BInitialArachyura.button1,Continue
+Spawn5BInitialChaosBeast.text,"<i>Something large and imposing reponds to your presence!</i>\n\nPlace the {type} group on 5B as shown."
+Spawn5BInitialChaosBeast.button1,Continue
+Spawn5BInitialNaga.button1,Continue
+TokenArmoredPriestsInfo.button1,Continue
+Spawn5BInitialNaga.text,"<i>Something large and imposing reponds to your presence!</i>\n\nPlace the {type} group on 5B as shown."
+UIIntro2Rumor.uitext,|||<i>"They're here again!  And those damned priests are leading them this time!"\n\nCaptain Jahrohd's shouts to his men echo through the barracks where you've joined the guards.  He turns to you.\n\n"You all came here to help, right?  Well, here's your chance.  Help us barricade the gate.  I just hope my men sealed off those tunnels well enough after last time."  There is a tone of severe desperation in his voice.</i>|||
+EventPlace16B19BObjectiveTokens.text,"<i>You notice more piles of rubble in the area.</i>\n\nPlace four objective tokens from your play area facedown as shown.\n<b>Do not reveal the color of the objective tokens.</b>"
